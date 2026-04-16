@@ -1,43 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
   <url>
     <loc>https://www.andrewcooks.co.uk/</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.andrewcooks.co.uk/about</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.andrewcooks.co.uk/services</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.andrewcooks.co.uk/gallery</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.andrewcooks.co.uk/contact</loc>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-cambridge</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-chelmsford</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-harlow</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-stevenage</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-braintree</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-bishops-stortford</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-saffron-walden</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-royston</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-ware</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-dunmow</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-stansted-mountfitchet</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-sawbridgeworth</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-takeley</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-newport</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-chesterford</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/areas</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog index -->
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/what-to-expect-hiring-private-chef</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/beef-wellington-private-dining-centrepiece</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/seasonal-winter-menus-private-chef</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/planning-perfect-dinner-party-private-chef</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/private-chef-vs-catering-difference</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewcooks.co.uk/blog/black-truffles-private-dining-essex</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Location pages — towns and larger areas (higher priority) -->
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-cambridge</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-chelmsford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-harlow</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-stevenage</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-braintree</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-bishops-stortford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-saffron-walden</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-royston</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-ware</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-hertford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-dunmow</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-stansted-mountfitchet</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-sawbridgeworth</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-takeley</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-newport</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-chesterford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-thaxted</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-elsenham</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-buntingford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-puckeridge</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-sawston</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-duxford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Location pages — villages (targeted long-tail) -->
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-arkesden</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-wicken-bonhunt</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-widdington</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-quendon</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-ugley</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-manuden</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-berden</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-farnham</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-henham</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-debden</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-wendens-ambo</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-littlebury</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-chrishall</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-easton</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-hinxton</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-ickleton</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-much-hadham</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-furneux-pelham</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-barkway</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-barley</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
