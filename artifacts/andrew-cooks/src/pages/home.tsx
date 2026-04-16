@@ -83,8 +83,8 @@ export default function Home() {
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <img
-            src={heroImg}
-            alt="Pan-fried red mullet with langoustine in saffron bisque by Andrew Taylor, private chef"
+            src={truffles}
+            alt="Fresh black truffles — premium ingredients used by private chef Andrew Taylor"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -99,7 +99,10 @@ export default function Home() {
             <span className="block font-sans text-sm tracking-[0.3em] uppercase mb-6 text-white/80">
               Private Chef &middot; Clavering, Essex
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight">
+            <h1
+              className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 leading-tight text-white"
+              style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7), 0 1px 6px rgba(0,0,0,0.5)" }}
+            >
               Extraordinary Dining,{" "}
               <br className="hidden md:block" />
               <span className="italic font-light">in Your Home.</span>
