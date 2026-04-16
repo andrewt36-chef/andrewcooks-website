@@ -5,7 +5,7 @@ const router = Router();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const ANDREW_EMAIL = "hello@hot-rocket.com";
-const FROM_ADDRESS = "Andrew Taylor Private Chef <onboarding@resend.dev>";
+const FROM_ADDRESS = "Andrew Taylor Private Chef <hello@andrewcooks.co.uk>";
 
 const EVENT_TYPE_LABELS: Record<string, string> = {
   "dinner-party": "Private Dinner Party",
