@@ -43,9 +43,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
           <Link href="/" className="group">
             <div className="font-serif text-2xl md:text-3xl tracking-wide uppercase">
-              <span className="text-primary font-medium">Andrew</span> Taylor
+              <span className={`font-medium transition-colors ${isScrolled ? "text-primary" : "text-white"}`}>Andrew</span>
+              <span className={`transition-colors ${isScrolled ? "" : "text-white"}`}> Taylor</span>
             </div>
-            <div className="text-xs tracking-widest text-muted-foreground uppercase mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
+            <div className={`text-xs tracking-widest uppercase mt-1 opacity-80 group-hover:opacity-100 transition-opacity ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
               Private Chef
             </div>
           </Link>
@@ -57,7 +58,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 key={link.href}
                 href={link.href}
                 className={`text-sm tracking-widest uppercase hover:text-primary transition-colors ${
-                  location === link.href ? "text-primary" : "text-foreground/80"
+                  location === link.href
+                    ? "text-primary"
+                    : isScrolled ? "text-foreground/80" : "text-white/80"
                 }`}
               >
                 {link.label}
@@ -75,7 +78,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 className={`flex items-center gap-1 text-sm tracking-widest uppercase hover:text-primary transition-colors py-2 ${
                   location.startsWith("/areas") || location.startsWith("/private-chef")
                     ? "text-primary"
-                    : "text-foreground/80"
+                    : isScrolled ? "text-foreground/80" : "text-white/80"
                 }`}
               >
                 Areas <ChevronDown className="w-3 h-3" />
@@ -114,7 +117,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             <Link
               href="/contact"
-              className="border border-primary text-primary px-6 py-2 text-sm tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors"
+              className={`px-6 py-2 text-sm tracking-widest uppercase transition-colors ${
+                isScrolled
+                  ? "border border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  : "border border-white/60 text-white hover:bg-white hover:text-black"
+              }`}
             >
               Enquire
             </Link>
