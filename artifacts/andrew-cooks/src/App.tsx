@@ -11,6 +11,8 @@ import Services from "@/pages/services";
 import Gallery from "@/pages/gallery";
 import Contact from "@/pages/contact";
 import SeoLocation from "@/pages/seo-location";
+import Blog from "@/pages/blog";
+import BlogPost from "@/pages/blog-post";
 import { Layout } from "@/components/Layout";
 
 const queryClient = new QueryClient();
@@ -42,7 +44,11 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
-        
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug">
+          {(params) => <BlogPost slug={params.slug ?? ""} />}
+        </Route>
+
         {SEO_LOCATIONS.map((loc) => (
           <Route key={loc} path={`/private-chef-${loc}`}>
             {() => <SeoLocation locationSlug={loc} />}

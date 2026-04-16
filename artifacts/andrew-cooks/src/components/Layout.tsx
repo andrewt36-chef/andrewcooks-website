@@ -38,6 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/blog", label: "Journal" },
   ];
 
   return (
@@ -213,6 +214,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <li><Link href="/about" className="hover:text-white transition-colors">About Andrew</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
               <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+              <li><Link href="/blog" className="hover:text-white transition-colors">Journal</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Enquire</Link></li>
             </ul>
           </div>
