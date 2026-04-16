@@ -13,27 +13,11 @@ import Contact from "@/pages/contact";
 import SeoLocation from "@/pages/seo-location";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
+import Areas from "@/pages/areas";
 import { Layout } from "@/components/Layout";
+import { ALL_LOCATIONS } from "@/lib/locations";
 
 const queryClient = new QueryClient();
-
-const SEO_LOCATIONS = [
-  "cambridge",
-  "chelmsford",
-  "harlow",
-  "stevenage",
-  "braintree",
-  "bishops-stortford",
-  "saffron-walden",
-  "royston",
-  "ware",
-  "great-dunmow",
-  "stansted-mountfitchet",
-  "sawbridgeworth",
-  "takeley",
-  "newport",
-  "great-chesterford"
-];
 
 function Router() {
   return (
@@ -48,10 +32,11 @@ function Router() {
         <Route path="/blog/:slug">
           {(params) => <BlogPost slug={params.slug ?? ""} />}
         </Route>
+        <Route path="/areas" component={Areas} />
 
-        {SEO_LOCATIONS.map((loc) => (
-          <Route key={loc} path={`/private-chef-${loc}`}>
-            {() => <SeoLocation locationSlug={loc} />}
+        {ALL_LOCATIONS.map((loc) => (
+          <Route key={loc.slug} path={`/private-chef-${loc.slug}`}>
+            {() => <SeoLocation locationSlug={loc.slug} />}
           </Route>
         ))}
 
