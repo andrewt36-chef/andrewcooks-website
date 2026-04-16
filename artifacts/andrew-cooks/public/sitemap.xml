@@ -87,6 +87,10 @@
 
   <!-- Location pages — towns and larger areas (higher priority) -->
   <url><loc>https://www.andrewcooks.co.uk/private-chef-cambridge</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-great-shelford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-little-shelford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-trumpington</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.andrewcooks.co.uk/private-chef-hauxton</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.andrewcooks.co.uk/private-chef-chelmsford</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.andrewcooks.co.uk/private-chef-harlow</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.andrewcooks.co.uk/private-chef-stevenage</loc><lastmod>2026-04-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

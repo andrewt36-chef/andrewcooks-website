@@ -34,6 +34,10 @@ export const ALL_LOCATIONS: Location[] = [
 
   // Cambridgeshire
   { slug: "cambridge",             name: "Cambridge",             region: "Cambridgeshire" },
+  { slug: "great-shelford",        name: "Great Shelford",        region: "Cambridgeshire" },
+  { slug: "little-shelford",       name: "Little Shelford",       region: "Cambridgeshire" },
+  { slug: "trumpington",           name: "Trumpington",           region: "Cambridgeshire" },
+  { slug: "hauxton",               name: "Hauxton",               region: "Cambridgeshire" },
   { slug: "sawston",               name: "Sawston",               region: "Cambridgeshire" },
   { slug: "duxford",               name: "Duxford",               region: "Cambridgeshire" },
   { slug: "hinxton",               name: "Hinxton",               region: "Cambridgeshire" },
