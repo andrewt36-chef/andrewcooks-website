@@ -52,23 +52,43 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || "Something went wrong");
+      }
+
       toast({
         title: "Enquiry Sent",
-        description: "Thank you for reaching out. Andrew will be in touch shortly.",
+        description:
+          "Thank you for reaching out. Andrew will be in touch shortly — please check your inbox for a confirmation.",
       });
       form.reset();
-    }, 1500);
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error ? err.message : "Please try again or contact us directly.";
+      toast({
+        title: "Failed to send",
+        description: message,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
     <>
-      <SeoHead 
-        title="Contact & Enquiries | Andrew Taylor Private Chef" 
+      <SeoHead
+        title="Contact & Enquiries | Andrew Taylor Private Chef"
         description="Get in touch to book Andrew Taylor for your next private dinner party or event in Essex, Cambridge, or Hertfordshire."
         canonicalUrl="/contact"
       />
@@ -76,8 +96,8 @@ export default function Contact() {
       <section className="pt-32 pb-24 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -94,13 +114,21 @@ export default function Contact() {
               <div className="space-y-6 border-t border-border pt-8">
                 <div>
                   <h3 className="font-sans text-xs tracking-widest uppercase text-muted-foreground mb-1">Email</h3>
-                  <a href="mailto:hello@hot-rocket.com" className="text-xl font-serif hover:text-primary transition-colors">
+                  <a
+                    href="mailto:hello@hot-rocket.com"
+                    className="text-xl font-serif hover:text-primary transition-colors"
+                    data-testid="link-email"
+                  >
                     hello@hot-rocket.com
                   </a>
                 </div>
                 <div>
                   <h3 className="font-sans text-xs tracking-widest uppercase text-muted-foreground mb-1">Phone</h3>
-                  <a href="tel:+447547393371" className="text-xl font-serif hover:text-primary transition-colors">
+                  <a
+                    href="tel:+447547393371"
+                    className="text-xl font-serif hover:text-primary transition-colors"
+                    data-testid="link-phone"
+                  >
                     +44 (0) 7547 393371
                   </a>
                 </div>
@@ -108,13 +136,15 @@ export default function Contact() {
                   <h3 className="font-sans text-xs tracking-widest uppercase text-muted-foreground mb-1">Location</h3>
                   <p className="text-lg font-serif">
                     Clavering, Essex<br />
-                    <span className="text-sm font-sans font-light text-muted-foreground">Serving Cambridge, Hertfordshire, Essex and beyond.</span>
+                    <span className="text-sm font-sans font-light text-muted-foreground">
+                      Serving Cambridge, Hertfordshire, Essex and beyond.
+                    </span>
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -130,7 +160,12 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-xs tracking-widest uppercase">Name</FormLabel>
                           <FormControl>
-                            <Input placeholder="Jane Doe" className="rounded-none bg-transparent border-border focus-visible:ring-primary" {...field} />
+                            <Input
+                              placeholder="Jane Doe"
+                              className="rounded-none bg-transparent border-border focus-visible:ring-primary"
+                              data-testid="input-name"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -143,7 +178,13 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-xs tracking-widest uppercase">Email</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="jane@example.com" className="rounded-none bg-transparent border-border focus-visible:ring-primary" {...field} />
+                            <Input
+                              type="email"
+                              placeholder="jane@example.com"
+                              className="rounded-none bg-transparent border-border focus-visible:ring-primary"
+                              data-testid="input-email"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -159,7 +200,13 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-xs tracking-widest uppercase">Phone (Optional)</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="+44..." className="rounded-none bg-transparent border-border focus-visible:ring-primary" {...field} />
+                            <Input
+                              type="tel"
+                              placeholder="+44..."
+                              className="rounded-none bg-transparent border-border focus-visible:ring-primary"
+                              data-testid="input-phone"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -172,7 +219,13 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-xs tracking-widest uppercase">No. of Guests</FormLabel>
                           <FormControl>
-                            <Input type="number" placeholder="e.g. 8" className="rounded-none bg-transparent border-border focus-visible:ring-primary" {...field} />
+                            <Input
+                              type="number"
+                              placeholder="e.g. 8"
+                              className="rounded-none bg-transparent border-border focus-visible:ring-primary"
+                              data-testid="input-guests"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -189,7 +242,10 @@ export default function Contact() {
                           <FormLabel className="text-xs tracking-widest uppercase">Event Type</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="rounded-none bg-transparent border-border focus:ring-primary">
+                              <SelectTrigger
+                                className="rounded-none bg-transparent border-border focus:ring-primary"
+                                data-testid="select-event-type"
+                              >
                                 <SelectValue placeholder="Select type" />
                               </SelectTrigger>
                             </FormControl>
@@ -212,7 +268,12 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="text-xs tracking-widest uppercase">Date (Optional)</FormLabel>
                           <FormControl>
-                            <Input type="date" className="rounded-none bg-transparent border-border focus-visible:ring-primary" {...field} />
+                            <Input
+                              type="date"
+                              className="rounded-none bg-transparent border-border focus-visible:ring-primary"
+                              data-testid="input-date"
+                              {...field}
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -227,10 +288,11 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-xs tracking-widest uppercase">Message</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder="Tell me about your event, location, dietary requirements..." 
-                            className="min-h-[120px] rounded-none bg-transparent border-border focus-visible:ring-primary resize-y" 
-                            {...field} 
+                          <Textarea
+                            placeholder="Tell me about your event, location, dietary requirements..."
+                            className="min-h-[120px] rounded-none bg-transparent border-border focus-visible:ring-primary resize-y"
+                            data-testid="textarea-message"
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -238,10 +300,11 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     className="w-full rounded-none bg-primary hover:bg-primary/90 text-primary-foreground tracking-widest uppercase py-6"
                     disabled={isSubmitting}
+                    data-testid="button-submit"
                   >
                     {isSubmitting ? "Sending..." : "Submit Enquiry"}
                   </Button>
