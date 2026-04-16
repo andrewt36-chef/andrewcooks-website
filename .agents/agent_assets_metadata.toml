@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "XzfAWXUaooLZQfuboMzjt"
+uri = "file://artifacts/andrew-cooks/public/images/hero.png"
+type = "image"
+title = "Fine dining plated dish"
+
+[[generated]]
+id = "ZgS0XQJJuB-SYt-B8YGTq"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-1.png"
+type = "image"
+title = "Elegant canapes on tray"
+
+[[generated]]
+id = "lmedaSl9kubq3WBFGEzq2"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-2.png"
+type = "image"
+title = "Tablescape with candles"
+
+[[generated]]
+id = "fwjbX0vVDSQPZPEVEi_9_"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-3.png"
+type = "image"
+title = "Gourmet dessert dish"
+
+[[generated]]
+id = "X2Uvj1awG_jY5TGyfpjKt"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-4.png"
+type = "image"
+title = "Seared scallops dish"
+
+[[generated]]
+id = "Ik0PMA5HcY91KhaZrN84-"
+uri = "file://artifacts/andrew-cooks/public/images/about.png"
+type = "image"
+title = "Chef cooking in kitchen"
+
+[[generated]]
+id = "oNsN_w6P-WywjdsUQpi2F"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-5.png"
+type = "image"
+title = "Beef wellington plated"
+
+[[generated]]
+id = "BkqM8ERVgLz3gTdmyO_aF"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-6.png"
+type = "image"
+title = "Fresh seasonal vegetables"
+
+[[generated]]
+id = "3PzF7QTf4cXioNV6pX863"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-7.png"
+type = "image"
+title = "Pouring wine at dinner"
+
+[[generated]]
+id = "2tiGf7lM3y0Orxo3DTXbn"
+uri = "file://artifacts/andrew-cooks/public/images/gallery-8.png"
+type = "image"
+title = "Artistic starter dish"

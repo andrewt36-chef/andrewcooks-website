@@ -16,6 +16,10 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+- **andrew-cooks** (`artifacts/andrew-cooks/`) — React + Vite private chef website for Andrew Taylor (andrewcooks.co.uk). Presentation-first, no backend. Includes: Home, About, Services, Gallery, Contact, and 15 local SEO pages for areas within 20 miles of Clavering, Essex. Uses Framer Motion, react-helmet-async, Tailwind CSS with warm earthy theme.
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
