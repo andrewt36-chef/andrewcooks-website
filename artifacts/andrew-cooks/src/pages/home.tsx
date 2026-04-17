@@ -83,8 +83,8 @@ export default function Home() {
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <img
-            src={truffles}
-            alt="Fresh black truffles — premium ingredients used by private chef Andrew Taylor"
+            src={beefWellington}
+            alt="Beef Wellington by private chef Andrew Taylor"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
