@@ -76,7 +76,7 @@ export default function About() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✦</span>
-                    Specialist in French technique & British seasonal produce
+                    Classically trained.
                   </li>
                 </ul>
               </div>
