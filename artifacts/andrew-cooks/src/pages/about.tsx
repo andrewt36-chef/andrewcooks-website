@@ -68,11 +68,11 @@ export default function About() {
                 <ul className="space-y-3 font-light text-muted-foreground text-sm">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✦</span>
-                    Level 3 Professional Chef Diploma, Tante Marie Culinary Academy
+                    Michelin star trained, having worked in 8 countries in Michelin starred restaurants and deluxe hotels
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✦</span>
-                    15+ years professional experience
+                    30+ years professional experience
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✦</span>
