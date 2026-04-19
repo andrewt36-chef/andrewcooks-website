@@ -1,4 +1,5 @@
 import heroImg from "@assets/WhatsApp_Image_2026-04-16_at_17.53.25_1776370176457.jpeg";
+import scallops from "@assets/IMG_1095_1776641786630.jpeg";
 import macaron from "@assets/WhatsApp_Image_2026-04-16_at_17.53.26_(2)_1776370176457.jpeg";
 import sweetShop from "@assets/WhatsApp_Image_2026-04-16_at_17.53.27_(4)_1776370176458.jpeg";
 import steamingSoup from "@assets/WhatsApp_Image_2026-04-16_at_17.53.27_(3)_1776370176458.jpeg";
@@ -14,6 +15,7 @@ import heirloomTomatoes from "@assets/WhatsApp_Image_2026-04-16_at_17.53.31_1776
 
 export {
   heroImg,
+  scallops,
   macaron,
   sweetShop,
   steamingSoup,

@@ -4,6 +4,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { ArrowRight, Star } from "lucide-react";
 import {
   heroImg,
+  scallops,
   beefWellington,
   braisedBeef,
   souffle,
@@ -45,8 +46,8 @@ export default function Home() {
     {
       title: "Private Dinner Parties",
       desc: "Bespoke multi-course menus for 2–20 guests, complete with pre-dinner canapés and full kitchen cleanup.",
-      img: beefWellington,
-      alt: "Golden Beef Wellington — Andrew's signature dinner party centrepiece",
+      img: scallops,
+      alt: "Fresh scallops — premium ingredients sourced by private chef Andrew Taylor",
     },
     {
       title: "Weekly Chef Service",
