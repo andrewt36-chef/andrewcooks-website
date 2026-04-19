@@ -56,10 +56,7 @@ export default function About() {
               
               <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
                 <p>
-                  Based in Clavering, Essex, I offer a highly personalised private chef service across Cambridge, Hertfordshire, and surrounding counties. My approach is rooted in classic technique, celebrating local, seasonal British produce with French culinary refinement.
-                </p>
-                <p>
-                  I trained at the prestigious Tante Marie Culinary Academy (now part of University of West London), graduating with a Level 3 Professional Chef Diploma. Over the past 30 years, I have honed my skills cooking for high-net-worth families, celebrities, and corporate clients across the UK and internationally.
+                  Based in Clavering, Essex, I offer a highly personalised private chef service across Cambridge, Hertfordshire, and surrounding counties. My approach is rooted in classic technique, celebrating local, seasonal British produce and modern influences with thirty years of experience working in Michelin-starred restaurants and deluxe hotels, in eight different European countries, working at the Ritz London, the Palace Gstaad Switzerland, Operakallaren Stockholm Sweden to name a few.
                 </p>
                 <p>
                   Whether it's an intimate dinner party, a weekend house party, or regular weekly meals for your family, I believe dining at home should be a luxurious, stress-free experience. I handle everything from bespoke menu design and ingredient sourcing to the cooking, service, and leaving your kitchen immaculate.
