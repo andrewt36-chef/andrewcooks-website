@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
     image: heroImg,
     imageAlt: "Elegant fine dining dish prepared by private chef Andrew Taylor",
     content: `
-      <p>Hiring a private chef for the first time can feel like uncharted territory. What do you actually get? How involved do you need to be? What happens in your kitchen? After more than 15 years working in clients' homes across Essex, Cambridge, and Hertfordshire, I've answered these questions hundreds of times — so let me walk you through it.</p>
+      <p>Hiring a private chef for the first time can feel like uncharted territory. What do you actually get? How involved do you need to be? What happens in your kitchen? After more than 30 years working in clients' homes across Essex, Cambridge, and Hertfordshire, I've answered these questions hundreds of times — so let me walk you through it.</p>
 
       <h2>The Consultation</h2>
       <p>Every booking starts with a conversation. I want to understand the occasion, the number of guests, any dietary requirements, and your general preferences. Do you love bold, confident flavours or something more delicate? Is there a particular dish you've always wanted to try? This is your evening — the menu should reflect your tastes, not just mine.</p>

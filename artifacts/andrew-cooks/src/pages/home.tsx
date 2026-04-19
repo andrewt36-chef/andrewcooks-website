@@ -135,7 +135,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed font-light mb-10">
               Food is one of life's great pleasures. As a classically trained private chef
-              with over 15 years of experience, my goal is simple: to make every meal feel
+              with over 30 years of experience, my goal is simple: to make every meal feel
               like a special occasion. From bespoke multi-course dinner parties to regular
               weekly cooking, I bring the refinement of fine dining directly to your dining
               room.
