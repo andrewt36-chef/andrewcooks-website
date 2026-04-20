@@ -18,19 +18,29 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.andrewcooks.co.uk/#business",
     "name": "Andrew Taylor Private Chef",
-    "image": "https://www.andrewcooks.co.uk/og-image.jpg",
-    "description":
-      "Classically trained private chef based in Clavering, Essex, offering bespoke culinary experiences in clients' homes.",
+    "url": "https://www.andrewcooks.co.uk",
+    "image": "https://www.andrewcooks.co.uk/opengraph.jpg",
+    "description": "Classically trained private chef based in Clavering, Essex, offering bespoke culinary experiences in clients' homes.",
     "telephone": "+447547393371",
-    "email": "hello@hot-rocket.com",
+    "email": "hello@andrewcooks.co.uk",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Clavering",
       "addressRegion": "Essex",
-      "addressCountry": "UK",
+      "addressCountry": "GB",
     },
-    areaServed: ["Cambridge", "Hertfordshire", "Essex"],
+    "areaServed": [
+      { "@type": "City", "name": "Cambridge" },
+      { "@type": "City", "name": "Saffron Walden" },
+      { "@type": "City", "name": "Bishop's Stortford" },
+      { "@type": "AdministrativeArea", "name": "Essex" },
+      { "@type": "AdministrativeArea", "name": "Hertfordshire" },
+      { "@type": "AdministrativeArea", "name": "Cambridgeshire" },
+    ],
+    "priceRange": "£££",
+    "servesCuisine": ["French", "British", "Modern European"],
   };
 
   const fadeInUp = {

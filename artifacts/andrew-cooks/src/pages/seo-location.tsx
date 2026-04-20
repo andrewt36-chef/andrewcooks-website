@@ -34,12 +34,39 @@ export default function SeoLocation({ locationSlug }: SeoLocationProps) {
 
   const nearbyLocations = ALL_LOCATIONS.filter((l) => l.slug !== locationSlug).slice(0, 8);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": `Private Chef in ${locationName}`,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://www.andrewcooks.co.uk/#business",
+      "name": "Andrew Taylor Private Chef",
+      "url": "https://www.andrewcooks.co.uk",
+      "telephone": "+447547393371",
+      "image": "https://www.andrewcooks.co.uk/opengraph.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Clavering",
+        "addressRegion": "Essex",
+        "addressCountry": "GB",
+      },
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": locationName,
+    },
+    "description": `Bespoke private chef services in ${locationName}. Andrew Taylor offers fine dining dinner parties, canapé receptions, holiday home cooking, and weekly chef services.`,
+    "url": `https://www.andrewcooks.co.uk/private-chef-${locationSlug}`,
+  };
+
   return (
     <>
       <SeoHead
         title={`Private Chef ${locationName} | Andrew Taylor`}
         description={`Looking for a private chef in ${locationName}? Andrew Taylor offers bespoke fine dining, private dinner parties, and home catering in ${locationName} and the surrounding area. Based in Clavering, Essex.`}
         canonicalUrl={`/private-chef-${locationSlug}`}
+        schema={schema}
       />
 
       {/* Hero */}
