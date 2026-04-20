@@ -158,10 +158,10 @@ export default function Contact() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-xs tracking-widest uppercase">Name</FormLabel>
+                          <FormLabel className="text-xs tracking-widest uppercase">Name <span className="text-primary">*</span></FormLabel>
                           <FormControl>
                             <Input
-                              placeholder="Jane Doe"
+                              placeholder=""
                               className="rounded-none bg-transparent border-border focus-visible:ring-primary"
                               data-testid="input-name"
                               {...field}
@@ -176,11 +176,11 @@ export default function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-xs tracking-widest uppercase">Email</FormLabel>
+                          <FormLabel className="text-xs tracking-widest uppercase">Email <span className="text-primary">*</span></FormLabel>
                           <FormControl>
                             <Input
                               type="email"
-                              placeholder="jane@example.com"
+                              placeholder=""
                               className="rounded-none bg-transparent border-border focus-visible:ring-primary"
                               data-testid="input-email"
                               {...field}
@@ -217,7 +217,7 @@ export default function Contact() {
                       name="guests"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-xs tracking-widest uppercase">No. of Guests</FormLabel>
+                          <FormLabel className="text-xs tracking-widest uppercase">No. of Guests <span className="text-primary">*</span></FormLabel>
                           <FormControl>
                             <Input
                               type="number"
@@ -239,7 +239,7 @@ export default function Contact() {
                       name="eventType"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-xs tracking-widest uppercase">Event Type</FormLabel>
+                          <FormLabel className="text-xs tracking-widest uppercase">Event Type <span className="text-primary">*</span></FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger
@@ -286,7 +286,7 @@ export default function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-xs tracking-widest uppercase">Message</FormLabel>
+                        <FormLabel className="text-xs tracking-widest uppercase">Message <span className="text-primary">*</span></FormLabel>
                         <FormControl>
                           <Textarea
                             placeholder="Tell me about your event, location, dietary requirements..."
