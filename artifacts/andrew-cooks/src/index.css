@@ -60,8 +60,8 @@
 
   /* Warm Cream */
   --background: 40 33% 96%;
-  /* Deep Forest Green / Charcoal */
-  --foreground: 156 20% 15%;
+  /* Charcoal */
+  --foreground: 0 0% 12%;
 
   --border: 40 20% 85%;
   --input: 40 20% 85%;
@@ -75,16 +75,16 @@
   --popover-foreground: 156 20% 15%;
   --popover-border: 40 20% 85%;
 
-  /* Aged Bronze */
-  --primary: 28 35% 40%;
-  --primary-foreground: 40 33% 96%;
+  /* Magenta Pink */
+  --primary: 328 73% 42%;
+  --primary-foreground: 0 0% 98%;
 
-  /* Subtle Green */
-  --secondary: 156 15% 25%;
-  --secondary-foreground: 40 33% 96%;
+  /* Neutral Dark */
+  --secondary: 0 0% 22%;
+  --secondary-foreground: 0 0% 98%;
 
   --muted: 40 20% 90%;
-  --muted-foreground: 156 10% 40%;
+  --muted-foreground: 0 0% 42%;
 
   --accent: 40 25% 92%;
   --accent-foreground: 156 20% 15%;
