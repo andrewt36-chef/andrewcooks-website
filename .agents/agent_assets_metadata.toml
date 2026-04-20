@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "XzfAWXUaooLZQfuboMzjt"
@@ -60,3 +59,9 @@ id = "2tiGf7lM3y0Orxo3DTXbn"
 uri = "file://artifacts/andrew-cooks/public/images/gallery-8.png"
 type = "image"
 title = "Artistic starter dish"
+
+[[outputs]]
+id = "JntoWv0_HOSvoVxjuewWO"
+uri = "file://artifacts/andrew-cooks/public/opengraph.jpg"
+type = "image"
+title = "OG Share Image (1200×630)"
